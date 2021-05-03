@@ -2,15 +2,41 @@
   height: 100vh;
   background-color: aqua;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 body {
   margin: 0;
   background-color: black;
+  font-size: 20px;
 }
 
+nav {
+  background-color: blue;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+li {
+  padding: 20px;
+  margin-right: 10px;
+}
+
+li:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
 h1 {
   margin: 0;
 }
