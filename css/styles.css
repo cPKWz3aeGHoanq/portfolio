@@ -44,3 +44,52 @@ h1 {
 .container {
   background-color: blanchedalmond;
 }
+
+.prjct-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.prjct-container {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+
+.prjct-body {
+  width: 350px;
+  height: 350px;
+}
+
+.project-tile {
+  height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: brown;
+}
+
+@media (max-width: 1215px) {
+  /* For mobile devices: */
+  .prjct-table {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  /* For mobile devices: */
+  .prjct-body {
+    width: 400px;
+    height: 400px;
+  }
+  .project-tile {
+    height: 60px;
+  }
+}
