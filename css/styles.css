@@ -1,6 +1,11 @@
 #welcome-section {
   height: 100vh;
-  background-color: aqua;
+  background: rgba(0, 0, 255, 0.288);
+  background-image: linear-gradient(
+    145deg,
+    rgba(7, 5, 117, 0.705),
+    rgba(250, 0, 217, 0.027)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,16 +18,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #45567d;
+  padding-top: 50px;
 }
 
 body {
   margin: 0;
-  background-color: black;
   font-size: 20px;
+  color: white;
 }
 
 nav {
-  background-color: blue;
+  background-color: black;
   position: fixed;
   width: 100%;
 }
@@ -41,15 +48,20 @@ li {
 }
 
 li:hover {
-  background-color: blueviolet;
+  background-color: #45567d;
   cursor: pointer;
 }
 h1 {
   margin: 0;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
 .container {
-  background-color: blanchedalmond;
   text-align: center;
 }
 
@@ -66,8 +78,6 @@ h1 {
 .prjct-container {
   display: flex;
   flex-direction: column;
-  background-color: blueviolet;
-
   margin: 20px 20px;
   border-radius: 4px;
 }
@@ -79,12 +89,17 @@ h1 {
 
 p {
   margin: 0 0;
+  line-height: 50px;
 }
 .project-tile {
   height: 50px;
   width: 100%;
   border-radius: 4px;
-  background-color: brown;
+  background-color: black;
+}
+
+.project-tile:hover {
+  background-color: grey;
 }
 
 @media only screen and (max-width: 950px) {
@@ -96,4 +111,29 @@ p {
   .project-tile {
     height: 60px;
   }
+  p {
+    line-height: 60px;
+  }
+}
+
+.projects-section-header {
+  width: 640px;
+  border-bottom: 0.2rem solid white;
+}
+
+#profile-link {
+  line-height: 50px;
+  background: black;
+  margin: 20px 0 20px 0;
+
+  border-radius: 4px;
+  color: inherit;
+  border-style: hidden;
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+}
+
+#profile-link:hover {
+  background: grey;
 }
